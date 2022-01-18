@@ -1,0 +1,19 @@
+<body>
+    <div id="container">
+        <h1>{{ title }}</h1>
+        <ul id="list_id">
+            <li *ngFor="let task of tasks">{{ task.description }}</li>
+        </ul>
+
+        <div id="add_input_text">
+            <input type="text" [(ngModel)]="newTask" name="description" id="add_input" placeholder="Ajouter votre nouvelle tache">
+            <button (click)="addTask()">Ajouter</button>
+        </div>
+
+        <div id="del_input_text">
+            <input type="number" [(ngModel)]="deleteTaskId" name="deleteTask" id="del_input" placeholder="ID de la tâche à supprimer">
+            <button (click)="deleteTask()">Supprimer</button>
+        </div>
+    </div>
+</body>
+
