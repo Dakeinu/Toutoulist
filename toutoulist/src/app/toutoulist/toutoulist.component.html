@@ -2,7 +2,7 @@
     <div id="container">
         <h1>{{ title }}</h1>
         <ul id="list_id">
-            <li *ngFor="let task of tasks">{{ task.description }}</li>
+            <li *ngFor="let task of tasks">ID : {{task.id}} | Tâche : {{ task.description }}</li>
         </ul>
 
         <div id="add_input_text">
