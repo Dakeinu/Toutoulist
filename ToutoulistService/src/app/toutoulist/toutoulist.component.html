@@ -1,0 +1,12 @@
+<div class="container">
+    <span>Toutou ID : {{ toutouId }}</span>
+    <div>
+        <button (click)="deleteToutou()">SUPPRIMER</button>
+    </div>
+    <div>
+        <span>TOUTOU : </span>
+        <input type="text" [(ngModel)]="toutouName">
+        <span>TASK : </span>
+        <input type="text" [(ngModel)]="toutouTask">
+    </div>
+</div>
